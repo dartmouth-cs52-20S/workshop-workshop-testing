@@ -618,6 +618,8 @@ describe('App Component Functionality Testing', () => {
 ```
 To run this, we just need to run `yarn test:mocha` to run the script we added in the `package.json` before that will just tell mocha to run the tests.
 
+Just some notes on what we did here...(1) When we called shallow(<App />) we created a shallow clone of our App which we could run our testing on (2) We found the increment button using `.find` and then simulated clicking it 42 times (3) In our second test, we found the decrement button and simulated clicking it 43 times
+
 
 WHAT THE HECK IT DIDN'T WORK! See if you can catch the bug with everything you know! :)
 
